@@ -1,0 +1,37 @@
+.btn {
+	min-width: 132px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 13px 15px;
+	border-radius: 8px;
+
+
+
+	&__login {
+		color: $accent-color;
+		border: 1px solid $accent-color;
+		line-height: 16px;
+
+		&:hover {
+			transform: translateY(-2px);
+			background-color: darken($white, 2%);
+			box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+			border: 1px solid $white;
+		}
+	}
+
+	&__register {
+		background-color: $accent-color;
+		color: $white;
+		border: 1px solid transparent;
+		line-height: 16px;
+
+		&:hover {
+			transform: translateY(-2px);
+			background-color: darken($accent-color, 8%);
+			box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+		}
+	}
+
+}
