@@ -30,7 +30,7 @@ body {
 }
 
 .container {
-	max-width: 1220px;
+	max-width: 1250px;
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 15px;
@@ -52,6 +52,18 @@ body {
 	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
 	overflow: hidden;
+}
+.lcl{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+}
+
+.trnct{
+	// white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .dfc {
@@ -83,6 +95,7 @@ body {
 	letter-spacing: 0.15em;
 	color: $black;
 }
+
 
 a,
 button {

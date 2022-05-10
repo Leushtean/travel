@@ -126,7 +126,7 @@ body {
 }
 
 .container {
-  max-width: 1220px;
+  max-width: 1250px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
@@ -148,6 +148,19 @@ body {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.lcl {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.trnct {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
 }
 
 .dfc {
@@ -201,19 +214,32 @@ button {
   padding: 45px 0;
 }
 
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .header__btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 18px;
+  margin-left: 34px;
 }
 
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 35px;
   color: #B8BECD;
+  margin-left: auto;
+}
+
+.menu__item ~ .menu__item {
+  margin-left: 35px;
 }
 
 .menu__link:hover {
@@ -223,6 +249,16 @@ button {
 .menu__link-active {
   font-weight: 500;
   color: #202336;
+}
+
+.logo {
+  width: 41px;
+  height: 41px;
+  display: inline-block;
+}
+
+.btn ~ .btn {
+  margin-left: 18px;
 }
 
 .btn {
@@ -270,4 +306,8 @@ button {
   background-color: #eb7b04;
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.section__title {
+  font-size: 112px;
 }

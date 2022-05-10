@@ -1,13 +1,16 @@
 .header {
 	padding: 45px 0;
 
-	&__inner {}
+	&__inner {
+		display: flex;
+		align-items: center;
+	}
 
 	&__logo {}
 
 	&__btn {
 		display: flex;
-		gap: 18px;
+		margin-left: 34px;
 	}
 }
 
@@ -15,11 +18,15 @@
 
 	&__list {
 		display: flex;
-		gap: 35px;
 		color: $nav-color;
+		margin-left: auto;
 	}
 
-	&__item {}
+	&__item {
+		&~&{
+			margin-left: 35px;
+		}
+	}
 
 	&__link {
 		&:hover {
@@ -34,14 +41,13 @@
 }
 
 .logo {
-
-	&__img {}
+	width: 41px;
+	height: 41px;
+	display: inline-block;
 }
 
 .btn {
-
-
-	&__login {}
-
-	&__register {}
+	&~&{
+		margin-left: 18px;
+	}
 }

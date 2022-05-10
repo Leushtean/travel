@@ -10,3 +10,11 @@ $white: #FFF;
 
 $ff2: "Mulish", sans-serif;
 $ff3: "Playfair Display", sans-serif;
+
+
+@mixin lcl3 {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+	overflow: hidden;
+}
