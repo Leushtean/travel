@@ -5,6 +5,8 @@ $nav-color: #B8BECD;
 $divider-color: #C4C4C4;
 $border-color: #D7D7D7;
 $footer-color: #F9F9FB;
+$select-color: #AFB0B9;
+$selectext-color: #4A4C53;
 $black: #000;
 $white: #FFF;
 
@@ -15,6 +17,6 @@ $ff3: "Playfair Display", sans-serif;
 @mixin lcl3 {
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 4;
+	-webkit-line-clamp: 2;
 	overflow: hidden;
 }

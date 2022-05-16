@@ -1,0 +1,88 @@
+.section {
+
+	&__hero {}
+}
+
+.hero {
+
+	&__content {
+		width: 470px;
+	}
+
+	&__title {
+		font-size: 64px;
+		font-family: $ff3;
+		line-height: 1.25;
+		font-weight: 700;
+		color: $title-color;
+		max-width: 356px;
+		margin-bottom: 74px;
+		@include lcl3;
+	}
+
+	&__forms {}
+
+	&__img {}
+}
+
+.form {
+
+	&__title {
+		display: inline-block;
+		font-size: 22px;
+		line-height: 1.22;
+		font-weight: 600;
+		color: $title-color;
+		margin-bottom: 48px;
+		position: relative;
+
+		&::after {
+			position: absolute;
+			content: '';
+			display: block;
+			background-color: $title-color;
+			border-radius: 4px;
+			margin-top: 21px;
+			width: 32px;
+			height: 2px;
+		}
+	}
+
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -15px;
+	}
+
+	&__item-wrap {
+		position: relative;
+		width: 220px;
+		margin: 0 15px 35px;
+		overflow: hidden;
+		border-radius: 6px;
+		border: .8px solid $select-color;
+		&::after {
+			position: absolute;
+			content: '';
+			display: block;
+			width: 65px;
+			height: 100%;
+			border-radius: 6px;
+			background-color: $white;
+			top: 0;
+			right: 0;
+			background-image: url('../../images/select_arrow.svg');
+			background-repeat: no-repeat;
+			background-position: center center;
+			pointer-events: none;
+		}
+	}
+
+	&__item {
+		display: inline-block;
+		font-size: 15px;
+		padding: 16px 31px;
+		color: $selectext-color;
+		width: 100%;
+	}
+}
