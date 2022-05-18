@@ -22,7 +22,8 @@
 		font-size: 22px;
 		font-weight: 600;
 		margin-bottom: 48px;
-		&::after{
+
+		&::after {
 			content: '';
 			display: block;
 			width: 32px;
