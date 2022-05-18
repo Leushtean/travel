@@ -318,8 +318,15 @@ button {
   margin-top: 12px;
 }
 
+.hero__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .hero__content {
   width: 470px;
+  padding-top: 33px;
 }
 
 .hero__title {
@@ -334,6 +341,16 @@ button {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
+}
+
+.hero__img {
+  -webkit-transform: translateX(143px);
+      -ms-transform: translateX(143px);
+          transform: translateX(143px);
+}
+
+.hero__image {
+  max-width: 687px;
 }
 
 .form__title {

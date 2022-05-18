@@ -1,7 +1,11 @@
 .hero {
+	&__inner{
+		display: flex;
+	}
 
 	&__content {
 		width: 470px;
+		padding-top: 33px;
 	}
 
 	&__title {
@@ -13,6 +17,13 @@
 		max-width: 356px;
 		margin-bottom: 74px;
 		@include lcl3;
+	}
+
+	&__img{
+		transform: translateX(143px);
+	}
+	&__image{
+		max-width: 687px;
 	}
 }
 
@@ -34,6 +45,8 @@
 			margin-top: 21px;
 		}
 	}
+
+	
 
 
 	&__items {
@@ -74,4 +87,5 @@
 		color: $selectext-color;
 		width: 100%;
 	}
+	
 }
