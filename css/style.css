@@ -262,6 +262,7 @@ button {
 }
 
 .btn {
+  font-size: 15px;
   min-width: 132px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -310,6 +311,10 @@ button {
 }
 
 .btn__form {
+  min-width: 180px;
+  font-family: "Mulish", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
   margin-top: 12px;
 }
 
@@ -329,6 +334,24 @@ button {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
+}
+
+.form__title {
+  color: #202336;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 48px;
+}
+
+.form__title::after {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 2px;
+  background-color: #202336;
+  top: 0;
+  left: 0;
+  margin-top: 21px;
 }
 
 .form__items {

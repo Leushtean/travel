@@ -17,6 +17,22 @@
 }
 
 .form {
+	&__title {
+		color: $title-color;
+		font-size: 22px;
+		font-weight: 600;
+		margin-bottom: 48px;
+		&::after{
+			content: '';
+			display: block;
+			width: 32px;
+			height: 2px;
+			background-color: $title-color;
+			top: 0;
+			left: 0;
+			margin-top: 21px;
+		}
+	}
 
 
 	&__items {
