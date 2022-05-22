@@ -315,7 +315,38 @@ button {
   font-family: "Mulish", sans-serif;
   font-size: 17px;
   font-weight: 700;
-  margin-top: 12px;
+  line-height: 24px;
+  margin-top: 15px;
+}
+
+.hero {
+  padding-top: 37px;
+  position: relative;
+}
+
+.hero::after, .hero::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.hero::after {
+  background-image: url("../../images/element3.svg");
+  width: 20px;
+  height: 20px;
+  top: 13%;
+  left: 44.4%;
+}
+
+.hero::before {
+  background-image: url("../../images/element2.svg");
+  width: 26px;
+  height: 26px;
+  top: 52.7%;
+  left: 21.7%;
 }
 
 .hero__inner {
@@ -336,7 +367,7 @@ button {
   font-weight: 700;
   color: #202336;
   max-width: 356px;
-  margin-bottom: 74px;
+  margin-bottom: 78px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -344,9 +375,9 @@ button {
 }
 
 .hero__img {
-  -webkit-transform: translateX(143px);
-      -ms-transform: translateX(143px);
-          transform: translateX(143px);
+  -webkit-transform: translateX(150px);
+      -ms-transform: translateX(150px);
+          transform: translateX(150px);
 }
 
 .hero__image {

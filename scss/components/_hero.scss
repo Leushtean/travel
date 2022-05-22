@@ -1,5 +1,31 @@
 .hero {
-	&__inner{
+	padding-top: 37px;
+	position: relative;
+	&::after,
+	&::before{
+		content: '';
+		display: block;
+		position: absolute;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	&::after{
+		background-image: url('../../images/element3.svg');
+		width: 20px;
+		height: 20px;
+		top: 13%;
+		left: 44.4%;
+	}
+	&::before{
+		background-image: url('../../images/element2.svg');
+		width: 26px;
+		height: 26px;
+		top: 52.7%;
+		left: 21.7%;
+	}
+
+	&__inner {
 		display: flex;
 	}
 
@@ -15,14 +41,15 @@
 		font-weight: 700;
 		color: $title-color;
 		max-width: 356px;
-		margin-bottom: 74px;
+		margin-bottom: 78px;
 		@include lcl3;
 	}
 
-	&__img{
-		transform: translateX(143px);
+	&__img {
+		transform: translateX(150px);
 	}
-	&__image{
+
+	&__image {
 		max-width: 687px;
 	}
 }
@@ -46,7 +73,7 @@
 		}
 	}
 
-	
+
 
 
 	&__items {
@@ -87,5 +114,5 @@
 		color: $selectext-color;
 		width: 100%;
 	}
-	
+
 }
