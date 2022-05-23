@@ -3,7 +3,7 @@
 	position: relative;
 
 	&::after,
-	&::before{
+	&::before {
 		content: '';
 		display: block;
 		position: absolute;
@@ -11,14 +11,16 @@
 		background-repeat: no-repeat;
 		background-position: center center;
 	}
-	&::after{
+
+	&::after {
 		background-image: url('../../images/element3.svg');
 		width: 20px;
 		height: 20px;
 		top: 13%;
 		left: 44.4%;
 	}
-	&::before{
+
+	&::before {
 		background-image: url('../../images/element2.svg');
 		width: 26px;
 		height: 26px;
