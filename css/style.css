@@ -352,7 +352,7 @@ button {
 }
 
 .hero::after {
-  background-image: url("../../images/element3.svg");
+  background-image: url("/images/element3.svg");
   width: 20px;
   height: 20px;
   top: 13%;
@@ -360,7 +360,7 @@ button {
 }
 
 .hero::before {
-  background-image: url("../../images/element2.svg");
+  background-image: url("/images/element2.svg");
   width: 26px;
   height: 26px;
   top: 52.7%;
