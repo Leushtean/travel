@@ -90,6 +90,10 @@ body {
   height: 100%;
 }
 
+html {
+  overflow: hidden;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
@@ -375,13 +379,20 @@ button {
 }
 
 .hero__img {
-  -webkit-transform: translateX(150px);
-      -ms-transform: translateX(150px);
-          transform: translateX(150px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hero__image {
+  -webkit-transform: translateX(150px);
+      -ms-transform: translateX(150px);
+          transform: translateX(150px);
   max-width: 687px;
+  width: 100%;
 }
 
 .form__title {
@@ -413,7 +424,7 @@ button {
 
 .form__item-wrap {
   position: relative;
-  width: 220px;
+  width: calc(50% - 30px);
   margin: 0 15px 35px;
   overflow: hidden;
   border-radius: 6px;
@@ -424,7 +435,7 @@ button {
   position: absolute;
   content: '';
   display: block;
-  width: 65px;
+  width: 55px;
   height: 100%;
   border-radius: 6px;
   background-color: #FFF;

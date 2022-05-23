@@ -1,6 +1,7 @@
 .hero {
 	padding-top: 37px;
 	position: relative;
+
 	&::after,
 	&::before{
 		content: '';
@@ -46,11 +47,14 @@
 	}
 
 	&__img {
-		transform: translateX(150px);
+		display: flex;
+		align-items: center;
 	}
 
 	&__image {
+		transform: translateX(150px);
 		max-width: 687px;
+		width: 100%;
 	}
 }
 
@@ -84,7 +88,7 @@
 
 	&__item-wrap {
 		position: relative;
-		width: 220px;
+		width: calc(50% - 30px);
 		margin: 0 15px 35px;
 		overflow: hidden;
 		border-radius: 6px;
@@ -94,7 +98,7 @@
 			position: absolute;
 			content: '';
 			display: block;
-			width: 65px;
+			width: 55px;
 			height: 100%;
 			border-radius: 6px;
 			background-color: $white;
