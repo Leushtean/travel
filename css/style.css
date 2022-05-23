@@ -475,7 +475,7 @@ button {
   }
   .hero__title {
     font-size: 45px;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
   }
   .hero__text {
     font-size: 14px;
@@ -509,13 +509,13 @@ button {
     right: 0;
     z-index: 2;
     background-color: #FFF;
-    padding: 55px 15px 35px;
+    padding: 55px 15px 55px;
   }
   .menu.menu--active .menu__list {
     display: block;
     width: 100%;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
   .menu.menu--active .menu__item {
     padding: 10px 0;
@@ -531,12 +531,6 @@ button {
     margin: 0;
     text-align: center;
   }
-  .menu.menu--active .header__btn .btn {
-    margin: 0 8px;
-  }
-  .menu.menu--active .header__btn .btn ~ .btn {
-    margin-top: 15px;
-  }
   .hero__content {
     width: 100%;
   }
@@ -546,6 +540,21 @@ button {
 }
 
 @media (max-width: 580px) {
+  .header {
+    padding: 15 0 15px;
+  }
+  .menu.menu--active {
+    padding: 55px 15px 55px;
+  }
+  .menu.menu--active .header__btn .btn {
+    margin: 0 8px;
+  }
+  .menu.menu--active .header__btn .btn ~ .btn {
+    margin-top: 15px;
+  }
+  .menu.menu--active .menu__list {
+    margin-bottom: 15px;
+  }
   .form__items {
     display: block;
     width: 100%;
@@ -554,5 +563,13 @@ button {
   .form__item-wrap {
     width: 100%;
     margin: 0px 0px 35px;
+  }
+  .form__title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 50px;
+  }
+  .form__title::after {
+    margin-top: 14px;
   }
 }

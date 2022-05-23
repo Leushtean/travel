@@ -1,14 +1,12 @@
 @media (max-width: 992px) {
 
 
-
-
 	.hero {
 		padding-top: 20px;
 
 		&__title {
 			font-size: 45px;
-			margin-bottom: 40px;
+			margin-bottom: 25px;
 		}
 
 		&__text {
@@ -49,7 +47,7 @@
 		right: 0;
 		z-index: 2;
 		background-color: $white;
-		padding: 55px 15px 35px;
+		padding: 55px 15px 55px;
 
 	}
 
@@ -57,7 +55,7 @@
 		display: block;
 		width: 100%;
 		text-align: center;
-		margin-bottom: 30px;
+		margin-bottom: 50px;
 	}
 
 	.menu.menu--active .menu__item {
@@ -82,14 +80,6 @@
 			margin: 0;
 			text-align: center;
 		}
-
-		.header__btn .btn {
-			margin: 0 8px;
-		}
-
-		.header__btn .btn~.btn {
-			margin-top: 15px;
-		}
 	}
 
 	.hero {
@@ -101,10 +91,37 @@
 		&__img {
 			display: none;
 		}
+
+		&__forms{
+		}
 	}
 }
 
 @media (max-width: 580px) {
+
+	.header {
+		padding: 15 0 15px;
+	}
+
+
+	.menu.menu--active {
+		padding: 55px 15px 55px;
+
+	}
+
+	.menu.menu--active {
+		.header__btn .btn {
+			margin: 0 8px;
+		}
+
+		.header__btn .btn~.btn {
+			margin-top: 15px;
+		}
+	}
+
+	.menu.menu--active .menu__list {
+		margin-bottom: 15px;
+	}
 
 
 
@@ -120,6 +137,16 @@
 		&__item-wrap {
 			width: 100%;
 			margin: 0px 0px 35px;
+		}
+
+		&__title {
+			font-size: 20px;
+			font-weight: 600;
+			margin-bottom: 50px;
+
+			&::after {
+				margin-top: 14px;
+			}
 		}
 	}
 }
