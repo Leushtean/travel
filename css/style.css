@@ -337,6 +337,73 @@ button {
   margin-top: 15px;
 }
 
+.menu-toggle {
+  display: inline-block;
+  border: 0;
+  padding: 0;
+  width: 30px;
+  height: 25px;
+  position: relative;
+  z-index: 3;
+  margin-left: auto;
+  background-color: transparent;
+}
+
+.menu-toggle::after, .menu-toggle::before,
+.menu-toggle span {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #202336;
+  left: 0;
+  -webkit-transition: all .15s linear;
+  -o-transition: all .15s linear;
+  transition: all .15s linear;
+}
+
+.menu-toggle::before {
+  top: 0;
+}
+
+.menu-toggle::after {
+  bottom: 0;
+}
+
+.menu-toggle span {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.menu-toggle.menu-toggle--active span {
+  opacity: 0;
+}
+
+.menu-toggle.menu-toggle--active::before {
+  -webkit-transform-origin: top left;
+      -ms-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  left: 6px;
+  top: 1px;
+}
+
+.menu-toggle.menu-toggle--active::after {
+  -webkit-transform-origin: bottom left;
+      -ms-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  left: 6px;
+}
+
 .hero {
   padding-top: 37px;
   position: relative;
@@ -498,6 +565,9 @@ button {
 }
 
 @media (max-width: 800px) {
+  .menu.menu {
+    display: none;
+  }
   .header {
     padding-top: 15px;
   }
@@ -535,6 +605,12 @@ button {
     width: 100%;
   }
   .hero__img {
+    display: none;
+  }
+}
+
+@media (min-width: 800px) {
+  .menu-toggle {
     display: none;
   }
 }
